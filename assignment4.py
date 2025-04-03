@@ -21,11 +21,11 @@ def process_file():
         print(f"✅ Processing complete! The modified file is saved as '{output_filename}'.")
 
     except FileNotFoundError:
-        print("❌ Error: The file does not exist. Please check the filename and try again.")
+        print(" Error: The file does not exist. Please check the filename and try again.")
     except PermissionError:
-        print("❌ Error: Permission denied. You don't have access to read this file.")
+        print(" Error: Permission denied. You don't have access to read this file.")
     except Exception as e:
-        print(f"❌ An unexpected error occurred: {e}")
+        print(f" An unexpected error occurred: {e}")
 
 # Run the function
 process_file()
